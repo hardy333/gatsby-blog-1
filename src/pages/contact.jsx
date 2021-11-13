@@ -4,15 +4,15 @@ import Layout from "../components/Layout"
 const Contact = () => {
   const [submits, setSubmits] = useState([])
   const handleSubmit = e => {
-    e.preventDefault()
-    setSubmits([
-      ...submits,
-      {
-        name: e.target.name.value,
-        age: e.target.age.value,
-        id: Math.random(),
-      },
-    ])
+    // e.preventDefault()
+    // setSubmits([
+    //   ...submits,
+    //   {
+    //     name: e.target.name.value,
+    //     age: e.target.age.value,
+    //     id: Math.random(),
+    //   },
+    // ])
   }
 
   return (
@@ -26,7 +26,7 @@ const Contact = () => {
         data-netlify-recaptcha="true"
         netlify-honeypot="bot-field"
       >
-        <p class="hidden">
+        <p className="hidden">
           <label>
             Don’t fill this out if you’re human: <input name="bot-field" />
           </label>
