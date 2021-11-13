@@ -18,24 +18,12 @@ const Contact = () => {
   return (
     <Layout>
       <h1>This is Contact page</h1>
-      <form
-        onSubmit={handleSubmit}
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        data-netlify-recaptcha="true"
-        netlify-honeypot="bot-field"
-      >
-        <p className="hidden">
-          <label>
-            Don’t fill this out if you’re human: <input name="bot-field" />
-          </label>
-        </p>
+      <form name="contact" method="POST" data-netlify="true">
         <label htmlFor="name">Name</label>
         <input type="text" name="name" id="name" />
         <label htmlFor="age">Age</label>
         <input type="text" name="age" id="age" />
-        <div data-netlify-recaptcha="true"></div>
+        {/* <div data-netlify-recaptcha="true"></div> */}
         <button type="submit">Submit</button>
       </form>
       <ul>
