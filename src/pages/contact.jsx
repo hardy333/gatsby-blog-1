@@ -51,6 +51,7 @@ const Contact = () => {
             Message: <textarea name="message"></textarea>
           </label>
         </p>
+        <input type="hidden" name="form-name" value="contact" />
         <p>
           <button type="submit">Send</button>
         </p>
